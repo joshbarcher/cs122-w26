@@ -9,16 +9,19 @@ public class TestProgram {
         //create an instance of a class (aka Object)
         Book lotr = new Book("JRR Tolkien", 1200,
                 true, "The Lord of the Rings");
+        System.out.println(lotr);
 
         System.out.println(lotr.getAuthor() + " wrote " +
                 lotr.getTitle());
 
         //instantiate more objects based on the Book class
         Book unknownBook = new Book();
-        System.out.println(unknownBook);
+        System.out.println(unknownBook.toString());
 
-        Book unknownBook2 = new Book();
-        System.out.println(unknownBook2);
+        Book hungerGames = new Book();
+        hungerGames.setTitle("The Hunger Games");
+        hungerGames.setAuthor("Suzanne Collins");
+        System.out.println(hungerGames.toString());
 
         Book anotherBook = unknownBook;
         System.out.println(anotherBook);
