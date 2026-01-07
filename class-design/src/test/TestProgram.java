@@ -1,3 +1,7 @@
+package test;
+
+import reading.util.Book;
+
 public class TestProgram {
     public static void main(String[] args) {
         //author, title, cover, pages, ink, format, genre
@@ -6,14 +10,17 @@ public class TestProgram {
         Book lotr = new Book("JRR Tolkien", 1200,
                 true, "The Lord of the Rings");
 
-        //assign fields in object
-        /*lotr.author = "JRR Tolkien";
-        lotr.pages = 1200;
-        lotr.hasCover = true;
-        lotr.title = "The Lord of the Rings";*/
-
-        //get the fields in the object
         System.out.println(lotr.getAuthor() + " wrote " +
                 lotr.getTitle());
+
+        //instantiate more objects based on the Book class
+        Book unknownBook = new Book();
+        System.out.println(unknownBook);
+
+        Book unknownBook2 = new Book();
+        System.out.println(unknownBook2);
+
+        Book anotherBook = unknownBook;
+        System.out.println(anotherBook);
     }
 }

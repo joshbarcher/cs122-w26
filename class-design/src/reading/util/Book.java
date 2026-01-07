@@ -1,9 +1,16 @@
+package reading.util;
+
 public class Book {
     //visibility modifiers - public, private, package, protected
     private String title;
     private String author;
     private int pages;
     private boolean hasCover;
+
+    //this is a default constructor
+    public Book() {
+        title = "Unknown";
+    }
 
     //this is a constructor!
     public Book(String bookAuthor, int bookPages,
