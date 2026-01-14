@@ -10,10 +10,12 @@ public class TestProgram {
         EBook ebook = new EBook("epub", "Pierce Brown", 500, true, "Red Rising");
         //CollectorsItem collectorsItem = new CollectorsItem();
 
-        AudioBook aBook = new AudioBook(10, "Stephen Frye"); //what format? what book?
+        AudioBook aBook = new AudioBook(10, "Stephen Frye", "epub", "JK Rowling",
+                400, true, "Harry Potter and the Philosopher's Stone");
         System.out.println(aBook.getNarrator());
         System.out.println(aBook.getFormat());
         System.out.println(aBook.getAuthor());
+        System.out.println(aBook.getTitle());
     }
 
     private static void testBooks() {

@@ -16,8 +16,7 @@ public class Book {
     }
 
     //this is a constructor!
-    public Book(String author, int pages,
-                boolean hasCover, String title) {
+    public Book(String author, int pages, boolean hasCover, String title) {
         this.title = title;
         this.author = author;
         this.pages = pages;
