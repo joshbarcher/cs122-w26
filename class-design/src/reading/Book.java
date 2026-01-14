@@ -1,4 +1,4 @@
-package reading.util;
+package reading;
 
 public class Book {
     //visibility modifiers - public, private, package, protected
@@ -28,7 +28,6 @@ public class Book {
     public String getTitle() {
         return title;
     }
-
     public String getAuthor() {
         return author;
     }
@@ -41,9 +40,20 @@ public class Book {
 
         this.title = title;
     }
-
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public void readBook() {
+        System.out.println("Reading...");
+    }
+
+    public void printHeader() {
+        System.out.println("Title: " + title + " Author: " + author);
+
+        for (int i = 0; i < pages; i++) {
+            System.out.println(i);
+        }
     }
 
     public String toString() {
