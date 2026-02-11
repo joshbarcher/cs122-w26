@@ -1,0 +1,4 @@
+number: 4472
+title: CS 122
+credits: 5
+description: Object oriented programming and other stuff!
