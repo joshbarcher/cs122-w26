@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Brackets {
     public static void main() {
-        String testMe = "(9 + {10 * 2} / 3)";
+        String testMe = "(9 + [10 * 2] / 3";
 
         //we need to use the wrapper class (Character) to store primitive chars
         Stack<Character> stack = new Stack<Character>();
@@ -17,7 +17,7 @@ public class Brackets {
             //ignore non-bracket chars
             boolean matched = false;
             for (int j = 0; j < goodChars.length; j++) {
-                if (goodChars[i] == next) {
+                if (goodChars[j] == next) {
                     matched = true;
                     break;
                 }
@@ -43,6 +43,8 @@ public class Brackets {
                 }
             }
         }
-        System.out.println("Balanced!");
+
+        if (stack.isEmpty()) System.out.println("Balanced!");
+        else System.out.println("Not balanced!");
     }
 }
