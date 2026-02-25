@@ -1,4 +1,4 @@
-package stackoverflow;
+package stacks.stackoverflow;
 
 public class Example {
     public static void main() {
