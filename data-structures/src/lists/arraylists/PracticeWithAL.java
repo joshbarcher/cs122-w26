@@ -2,11 +2,13 @@ package lists.arraylists;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class PracticeWithAL {
     public static void main() {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        //program against the interface
+        List<Integer> list = new ArrayList<Integer>();
 
         list.add(42);
         list.add(6);
